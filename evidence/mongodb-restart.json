@@ -1,0 +1,68 @@
+{
+  "verifiedAt": "2026-11-20T07:53:50.329Z",
+  "mongodbVersion": "8.0.19",
+  "apiProcessIds": {
+    "beforeRestart": 20500,
+    "afterRestart": 24236
+  },
+  "postStatusByForum": {
+    "nasa": 201,
+    "esports-tribunal": 201,
+    "notNasa": 201
+  },
+  "postRecordsByForum": {
+    "nasa": {
+      "id": "8f697da6-d680-4019-b41f-843d9012bf63",
+      "author": "Lab verification",
+      "text": "Orbit report from nasa",
+      "timestamp": "2026-11-20T07:53:49.787Z"
+    },
+    "esports-tribunal": {
+      "id": "ddb3f1bf-3a7a-4f8a-bc5e-1a02d0a99614",
+      "author": "Lab verification",
+      "text": "Final round from esports-tribunal",
+      "timestamp": "2026-11-20T07:53:49.799Z"
+    },
+    "notNasa": {
+      "id": "c156bb7f-c021-45e1-99c5-44e3bb1a30d4",
+      "author": "Lab verification",
+      "text": "Community news from notNasa",
+      "timestamp": "2026-11-20T07:53:49.804Z"
+    }
+  },
+  "getAfterRestartByForum": {
+    "nasa": {
+      "status": 200,
+      "body": [
+        {
+          "id": "8f697da6-d680-4019-b41f-843d9012bf63",
+          "author": "Lab verification",
+          "text": "Orbit report from nasa",
+          "timestamp": "2026-11-20T07:53:49.787Z"
+        }
+      ]
+    },
+    "esports-tribunal": {
+      "status": 200,
+      "body": [
+        {
+          "id": "ddb3f1bf-3a7a-4f8a-bc5e-1a02d0a99614",
+          "author": "Lab verification",
+          "text": "Final round from esports-tribunal",
+          "timestamp": "2026-11-20T07:53:49.799Z"
+        }
+      ]
+    },
+    "notNasa": {
+      "status": 200,
+      "body": [
+        {
+          "id": "c156bb7f-c021-45e1-99c5-44e3bb1a30d4",
+          "author": "Lab verification",
+          "text": "Community news from notNasa",
+          "timestamp": "2026-11-20T07:53:49.804Z"
+        }
+      ]
+    }
+  }
+}
