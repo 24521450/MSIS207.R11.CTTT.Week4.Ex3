@@ -1,0 +1,94 @@
+{
+  "verifiedAt": "2026-11-20T07:53:59.543Z",
+  "browser": "Chrome/157.0.8103.79",
+  "throttle": {
+    "method": "Network.emulateNetworkConditions",
+    "offline": false,
+    "latency": 2000,
+    "downloadThroughput": 50000,
+    "uploadThroughput": 50000,
+    "connectionType": "cellular3g"
+  },
+  "rapidSwitch": {
+    "requests": [
+      {
+        "requestId": "31444.8",
+        "method": "GET",
+        "url": "http://127.0.0.1:3018/api/messages/esports-tribunal",
+        "startedAt": 261928.694223,
+        "loadingFailed": {
+          "canceled": true,
+          "errorText": "net::ERR_ABORTED",
+          "at": 261928.700195
+        }
+      },
+      {
+        "requestId": "31444.9",
+        "method": "GET",
+        "url": "http://127.0.0.1:3018/api/messages/nasa",
+        "startedAt": 261928.699622,
+        "loadingFailed": {
+          "canceled": true,
+          "errorText": "net::ERR_ABORTED",
+          "at": 261928.707922
+        }
+      },
+      {
+        "requestId": "31444.10",
+        "method": "GET",
+        "url": "http://127.0.0.1:3018/api/messages/notNasa",
+        "startedAt": 261928.707437,
+        "status": 200,
+        "finishedAt": 261930.733126
+      }
+    ],
+    "finalUi": {
+      "forum": "notNasa",
+      "messages": [
+        "Community news from notNasa"
+      ],
+      "loading": "false",
+      "alert": null
+    }
+  },
+  "postFromForm": {
+    "request": {
+      "requestId": "31444.11",
+      "method": "POST",
+      "url": "http://127.0.0.1:3018/api/messages/notNasa",
+      "startedAt": 261930.763663,
+      "status": 201,
+      "finishedAt": 261932.808987
+    },
+    "storedRecord": {
+      "id": "363935b6-4cd8-44a3-b6d8-b8a3692c42a0",
+      "author": "Browser check",
+      "text": "Posted from the form",
+      "timestamp": "2026-11-20T07:53:53.899Z"
+    }
+  },
+  "apiFailure": {
+    "trigger": "Stopped the disposable MongoDB instance while the restarted API was still running.",
+    "request": {
+      "requestId": "31444.12",
+      "method": "GET",
+      "url": "http://127.0.0.1:3018/api/messages/nasa",
+      "startedAt": 261933.330457,
+      "status": 500,
+      "finishedAt": 261936.416462
+    },
+    "responseBody": {
+      "error": "Unable to process the request."
+    },
+    "apiStderr": [
+      "Forum API GET /api/messages/nasa failed (MongoServerSelectionError)."
+    ],
+    "ui": {
+      "forum": "nasa",
+      "messages": [],
+      "loading": "false",
+      "alert": "Unable to process the request."
+    }
+  },
+  "runtimeExceptions": []
+}
